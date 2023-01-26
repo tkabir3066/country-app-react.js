@@ -9,6 +9,7 @@ const Search = (props) => {
 
   useEffect(() => {
     props.onSearch(searchText);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchText]);
   return (
     <div style={{ textAlign: "center" }}>
